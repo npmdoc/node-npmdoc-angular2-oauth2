@@ -1,0 +1,1151 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a>angular2-oauth2 (v1.3.10)</a>
+</h1>
+<h4>Support for OAuth 2 and OpenId Connect (OIDC) for Angular 2.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.angular2-oauth2">module angular2-oauth2</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService">
+            function <span class="apidocSignatureSpan">angular2-oauth2.</span>OAuthService
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">angular2-oauth2.</span>OAuthService.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.angular2-oauth2.OAuthService">module angular2-oauth2.OAuthService</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.OAuthService">
+            function <span class="apidocSignatureSpan">angular2-oauth2.</span>OAuthService
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.angular2-oauth2.OAuthService.prototype">module angular2-oauth2.OAuthService.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.authorizationHeader">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>authorizationHeader
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.callEventIfExists">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>callEventIfExists
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.checkAtHash">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>checkAtHash
+            <span class="apidocSignatureSpan">(accessToken, idClaims)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.createAndSaveNonce">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>createAndSaveNonce
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.createLoginUrl">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>createLoginUrl
+            <span class="apidocSignatureSpan">(state)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.createNonce">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>createNonce
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.getAccessToken">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>getAccessToken
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.getFragment">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>getFragment
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.getIdToken">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>getIdToken
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.getIdentityClaims">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>getIdentityClaims
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.hasValidAccessToken">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>hasValidAccessToken
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.hasValidIdToken">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>hasValidIdToken
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.initImplicitFlow">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>initImplicitFlow
+            <span class="apidocSignatureSpan">(additionalState)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.logOut">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>logOut
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.padBase64">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>padBase64
+            <span class="apidocSignatureSpan">(base64data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.parseQueryString">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>parseQueryString
+            <span class="apidocSignatureSpan">(queryString)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.processIdToken">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>processIdToken
+            <span class="apidocSignatureSpan">(idToken, accessToken)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.setStorage">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>setStorage
+            <span class="apidocSignatureSpan">(storage)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.tryLogin">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>tryLogin
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.tryLoginWithIFrame">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>tryLoginWithIFrame
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.angular2-oauth2.OAuthService.prototype.tryRefresh">
+            function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>tryRefresh
+            <span class="apidocSignatureSpan">(timeoutInMsec)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.angular2-oauth2" id="apidoc.module.angular2-oauth2">module angular2-oauth2</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService" id="apidoc.element.angular2-oauth2.OAuthService">
+        function <span class="apidocSignatureSpan">angular2-oauth2.</span>OAuthService
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function OAuthService() {
+    this.clientId = "";
+    this.redirectUri = "";
+    this.loginUrl = "";
+    this.scope = "";
+    this.rngUrl = "";
+    this.oidc = false;
+    this.state = "";
+    this.issuer = "";
+    this.logoutUrl = "";
+    this._storage = localStorage;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.angular2-oauth2.OAuthService" id="apidoc.module.angular2-oauth2.OAuthService">module angular2-oauth2.OAuthService</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.OAuthService" id="apidoc.element.angular2-oauth2.OAuthService.OAuthService">
+        function <span class="apidocSignatureSpan">angular2-oauth2.</span>OAuthService
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function OAuthService() {
+    this.clientId = "";
+    this.redirectUri = "";
+    this.loginUrl = "";
+    this.scope = "";
+    this.rngUrl = "";
+    this.oidc = false;
+    this.state = "";
+    this.issuer = "";
+    this.logoutUrl = "";
+    this._storage = localStorage;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.angular2-oauth2.OAuthService.prototype" id="apidoc.module.angular2-oauth2.OAuthService.prototype">module angular2-oauth2.OAuthService.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.authorizationHeader" id="apidoc.element.angular2-oauth2.OAuthService.prototype.authorizationHeader">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>authorizationHeader
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">authorizationHeader = function () {
+    return "Bearer " + this.getAccessToken();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.callEventIfExists" id="apidoc.element.angular2-oauth2.OAuthService.prototype.callEventIfExists">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>callEventIfExists
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">callEventIfExists = function (options) {
+    var that = this;
+    if (options.onTokenReceived) {
+        var tokenParams = {
+            idClaims: that.getIdentityClaims(),
+            idToken: that.getIdToken(),
+            accessToken: that.getAccessToken(),
+            state: that.state
+        };
+        options.onTokenReceived(tokenParams);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        return false;
+}
+if (options.validationHandler) {
+    var validationParams = { accessToken: accessToken, idToken: idToken };
+    options
+        .validationHandler(validationParams)
+        .then(function () {
+        _this.<span class="apidocCodeKeywordSpan">callEventIfExists</span>(options);
+    })
+        .catch(function (reason) {
+        console.error('Error validating tokens');
+        console.error(reason);
+    });
+}
+else {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.checkAtHash" id="apidoc.element.angular2-oauth2.OAuthService.prototype.checkAtHash">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>checkAtHash
+        <span class="apidocSignatureSpan">(accessToken, idClaims)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">checkAtHash = function (accessToken, idClaims) {
+    if (!accessToken || !idClaims || !idClaims.at_hash)
+        return true;
+    var tokenHash = sha256(accessToken, { asBytes: true });
+    var leftMostHalf = tokenHash.slice(0, (tokenHash.length / 2));
+    var tokenHashBase64 = base64_js_1.fromByteArray(leftMostHalf);
+    var atHash = tokenHashBase64.replace(/\+/g, "-").replace(/\//g, "_").replace(/=/g, "");
+    var claimsAtHash = idClaims.at_hash.replace(/=/g, "");
+    if (atHash != claimsAtHash) {
+        console.warn("exptected at_hash: " + atHash);
+        console.warn("actual at_hash: " + claimsAtHash);
+    }
+    return (atHash == claimsAtHash);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    console.warn("Wrong issuer: " + claims.iss);
+    return false;
+}
+if (claims.nonce !== savedNonce) {
+    console.warn("Wrong nonce: " + claims.nonce);
+    return false;
+}
+if (accessToken &amp;&amp; !this.<span class="apidocCodeKeywordSpan">checkAtHash</span>(accessToken, claims)) {
+    console.warn("Wrong at_hash");
+    return false;
+}
+var now = Date.now();
+var issuedAtMSec = claims.iat * 1000;
+var expiresAtMSec = claims.exp * 1000;
+var tenMinutesInMsec = 1000 * 60 * 10;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.createAndSaveNonce" id="apidoc.element.angular2-oauth2.OAuthService.prototype.createAndSaveNonce">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>createAndSaveNonce
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createAndSaveNonce = function () {
+    var that = this;
+    return this.createNonce().then(function (nonce) {
+        that._storage.setItem("nonce", nonce);
+        return nonce;
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    this._storage = storage;
+};
+OAuthService.prototype.createLoginUrl = function (state) {
+    var that = this;
+    if (typeof state === "undefined") {
+        state = "";
+    }
+    return this.<span class="apidocCodeKeywordSpan">createAndSaveNonce</span>().then(function (nonce) {
+        if (state) {
+            state = nonce + ";" + state;
+        }
+        else {
+            state = nonce;
+        }
+        var response_type = "token";
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.createLoginUrl" id="apidoc.element.angular2-oauth2.OAuthService.prototype.createLoginUrl">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>createLoginUrl
+        <span class="apidocSignatureSpan">(state)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createLoginUrl = function (state) {
+    var that = this;
+    if (typeof state === "undefined") {
+        state = "";
+    }
+    return this.createAndSaveNonce().then(function (nonce) {
+        if (state) {
+            state = nonce + ";" + state;
+        }
+        else {
+            state = nonce;
+        }
+        var response_type = "token";
+        if (that.oidc) {
+            response_type = "id_token+token";
+        }
+        var url = that.loginUrl
+            + "?response_type="
+            + response_type
+            + "&amp;client_id="
+            + encodeURIComponent(that.clientId)
+            + "&amp;state="
+            + encodeURIComponent(state)
+            + "&amp;redirect_uri="
+            + encodeURIComponent(that.redirectUri)
+            + "&amp;scope="
+            + encodeURIComponent(that.scope);
+        if (that.oidc) {
+            url += "&amp;nonce=" + encodeURIComponent(nonce);
+        }
+        return url;
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        }
+        return url;
+    });
+};
+;
+OAuthService.prototype.initImplicitFlow = function (additionalState) {
+    if (additionalState === void 0) { additionalState = ""; }
+    this.<span class="apidocCodeKeywordSpan">createLoginUrl</span>(additionalState).then(function (url) {
+        location.href = url;
+    })
+        .catch(function (error) {
+        console.error("Error in initImplicitFlow");
+        console.error(error);
+    });
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.createNonce" id="apidoc.element.angular2-oauth2.OAuthService.prototype.createNonce">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>createNonce
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createNonce = function () {
+    var _this = this;
+    return new Promise(function (resolve, reject) {
+        if (_this.rngUrl) {
+            throw new Error("createNonce with rng-web-api has not been implemented so far");
+        }
+        else {
+            var text = "";
+            var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            for (var i = 0; i &lt; 40; i++)
+                text += possible.charAt(Math.floor(Math.random() * possible.length));
+            resolve(text);
+        }
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        return;
+    var logoutUrl = this.logoutUrl.replace(/\{\{id_token\}\}/, id_token);
+    location.href = logoutUrl;
+};
+;
+OAuthService.prototype.createAndSaveNonce = function () {
+    var that = this;
+    return this.<span class="apidocCodeKeywordSpan">createNonce</span>().then(function (nonce) {
+        that._storage.setItem("nonce", nonce);
+        return nonce;
+    });
+};
+;
+OAuthService.prototype.createNonce = function () {
+    var _this = this;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.getAccessToken" id="apidoc.element.angular2-oauth2.OAuthService.prototype.getAccessToken">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>getAccessToken
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getAccessToken = function () {
+    return this._storage.getItem("access_token");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+;
+OAuthService.prototype.callEventIfExists = function (options) {
+    var that = this;
+    if (options.onTokenReceived) {
+        var tokenParams = {
+            idClaims: that.getIdentityClaims(),
+            idToken: that.getIdToken(),
+            accessToken: that.<span class="apidocCodeKeywordSpan">getAccessToken</span>(),
+            state: that.state
+        };
+        options.onTokenReceived(tokenParams);
+    }
+};
+OAuthService.prototype.tryLogin = function (options) {
+    var _this = this;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.getFragment" id="apidoc.element.angular2-oauth2.OAuthService.prototype.getFragment">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>getFragment
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getFragment = function () {
+    if (window.location.hash.indexOf("#") === 0) {
+        return this.parseQueryString(window.location.hash.substr(1));
+    }
+    else {
+        return {};
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        };
+        options.onTokenReceived(tokenParams);
+    }
+};
+OAuthService.prototype.tryLogin = function (options) {
+    var _this = this;
+    options = options || {};
+    var parts = this.<span class="apidocCodeKeywordSpan">getFragment</span>();
+    var accessToken = parts["access_token"];
+    var idToken = parts["id_token"];
+    var state = parts["state"];
+    var oidcSuccess = false;
+    var oauthSuccess = false;
+    if (!accessToken || !state)
+        return false;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.getIdToken" id="apidoc.element.angular2-oauth2.OAuthService.prototype.getIdToken">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>getIdToken
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getIdToken = function () {
+    return this._storage.getItem("id_token");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+;
+OAuthService.prototype.callEventIfExists = function (options) {
+    var that = this;
+    if (options.onTokenReceived) {
+        var tokenParams = {
+            idClaims: that.getIdentityClaims(),
+            idToken: that.<span class="apidocCodeKeywordSpan">getIdToken</span>(),
+            accessToken: that.getAccessToken(),
+            state: that.state
+        };
+        options.onTokenReceived(tokenParams);
+    }
+};
+OAuthService.prototype.tryLogin = function (options) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.getIdentityClaims" id="apidoc.element.angular2-oauth2.OAuthService.prototype.getIdentityClaims">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>getIdentityClaims
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getIdentityClaims = function () {
+    var claims = this._storage.getItem("id_token_claims_obj");
+    if (!claims)
+        return null;
+    return JSON.parse(claims);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    });
+};
+;
+OAuthService.prototype.callEventIfExists = function (options) {
+    var that = this;
+    if (options.onTokenReceived) {
+        var tokenParams = {
+            idClaims: that.<span class="apidocCodeKeywordSpan">getIdentityClaims</span>(),
+            idToken: that.getIdToken(),
+            accessToken: that.getAccessToken(),
+            state: that.state
+        };
+        options.onTokenReceived(tokenParams);
+    }
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.hasValidAccessToken" id="apidoc.element.angular2-oauth2.OAuthService.prototype.hasValidAccessToken">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>hasValidAccessToken
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hasValidAccessToken = function () {
+    if (this.getAccessToken()) {
+        var expiresAt = this._storage.getItem("expires_at");
+        var now = new Date();
+        if (expiresAt &amp;&amp; parseInt(expiresAt) &lt; now.getTime()) {
+            return false;
+        }
+        return true;
+    }
+    return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.hasValidIdToken" id="apidoc.element.angular2-oauth2.OAuthService.prototype.hasValidIdToken">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>hasValidIdToken
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hasValidIdToken = function () {
+    if (this.getIdToken) {
+        var expiresAt = this._storage.getItem("id_token_expires_at");
+        var now = new Date();
+        if (expiresAt &amp;&amp; parseInt(expiresAt) &lt; now.getTime()) {
+            return false;
+        }
+        return true;
+    }
+    return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.initImplicitFlow" id="apidoc.element.angular2-oauth2.OAuthService.prototype.initImplicitFlow">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>initImplicitFlow
+        <span class="apidocSignatureSpan">(additionalState)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initImplicitFlow = function (additionalState) {
+    if (additionalState === void 0) { additionalState = ""; }
+    this.createLoginUrl(additionalState).then(function (url) {
+        location.href = url;
+    })
+        .catch(function (error) {
+        console.error("Error in initImplicitFlow");
+        console.error(error);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+})
+export class HomeComponent {
+
+constructor(private oAuthService: OAuthService) {
+}
+
+public login() {
+    this.oAuthService.<span class="apidocCodeKeywordSpan">initImplicitFlow</span>();
+}
+
+public logoff() {
+    this.oAuthService.logOut();
+}
+
+public get name() {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.logOut" id="apidoc.element.angular2-oauth2.OAuthService.prototype.logOut">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>logOut
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">logOut = function () {
+    var id_token = this.getIdToken();
+    this._storage.removeItem("access_token");
+    this._storage.removeItem("id_token");
+    this._storage.removeItem("nonce");
+    this._storage.removeItem("expires_at");
+    this._storage.removeItem("id_token_claims_obj");
+    this._storage.removeItem("id_token_expires_at");
+    if (!this.logoutUrl)
+        return;
+    var logoutUrl = this.logoutUrl.replace(/\{\{id_token\}\}/, id_token);
+    location.href = logoutUrl;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+public login() {
+    this.oAuthService.initImplicitFlow();
+}
+
+public logoff() {
+    this.oAuthService.<span class="apidocCodeKeywordSpan">logOut</span>();
+}
+
+public get name() {
+    let claims = this.oAuthService.getIdentityClaims();
+    if (!claims) return null;
+    return claims.given_name;
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.padBase64" id="apidoc.element.angular2-oauth2.OAuthService.prototype.padBase64">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>padBase64
+        <span class="apidocSignatureSpan">(base64data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">padBase64 = function (base64data) {
+    while (base64data.length % 4 !== 0) {
+        base64data += "=";
+    }
+    return base64data;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        this.callEventIfExists(options);
+    }
+    return true;
+};
+;
+OAuthService.prototype.processIdToken = function (idToken, accessToken) {
+    var tokenParts = idToken.split(".");
+    var claimsBase64 = this.<span class="apidocCodeKeywordSpan">padBase64</span>(tokenParts[1]);
+    var claimsJson = js_base64_1.Base64.decode(claimsBase64);
+    var claims = JSON.parse(claimsJson);
+    var savedNonce = this._storage.getItem("nonce");
+    if (claims.aud !== this.clientId) {
+        console.warn("Wrong audience: " + claims.aud);
+        return false;
+    }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.parseQueryString" id="apidoc.element.angular2-oauth2.OAuthService.prototype.parseQueryString">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>parseQueryString
+        <span class="apidocSignatureSpan">(queryString)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parseQueryString = function (queryString) {
+    var data = {}, pairs, pair, separatorIndex, escapedKey, escapedValue, key, value;
+    if (queryString === null) {
+        return data;
+    }
+    pairs = queryString.split("&amp;");
+    for (var i = 0; i &lt; pairs.length; i++) {
+        pair = pairs[i];
+        separatorIndex = pair.indexOf("=");
+        if (separatorIndex === -1) {
+            escapedKey = pair;
+            escapedValue = null;
+        }
+        else {
+            escapedKey = pair.substr(0, separatorIndex);
+            escapedValue = pair.substr(separatorIndex + 1);
+        }
+        key = decodeURIComponent(escapedKey);
+        value = decodeURIComponent(escapedValue);
+        if (key.substr(0, 1) === '/')
+            key = key.substr(1);
+        data[key] = value;
+    }
+    return data;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+            resolve(text);
+        }
+    });
+};
+;
+OAuthService.prototype.getFragment = function () {
+    if (window.location.hash.indexOf("#") === 0) {
+        return this.<span class="apidocCodeKeywordSpan">parseQueryString</span>(window.location.hash.substr(1));
+    }
+    else {
+        return {};
+    }
+};
+;
+OAuthService.prototype.parseQueryString = function (queryString) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.processIdToken" id="apidoc.element.angular2-oauth2.OAuthService.prototype.processIdToken">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>processIdToken
+        <span class="apidocSignatureSpan">(idToken, accessToken)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">processIdToken = function (idToken, accessToken) {
+    var tokenParts = idToken.split(".");
+    var claimsBase64 = this.padBase64(tokenParts[1]);
+    var claimsJson = js_base64_1.Base64.decode(claimsBase64);
+    var claims = JSON.parse(claimsJson);
+    var savedNonce = this._storage.getItem("nonce");
+    if (claims.aud !== this.clientId) {
+        console.warn("Wrong audience: " + claims.aud);
+        return false;
+    }
+    if (this.issuer &amp;&amp; claims.iss !== this.issuer) {
+        console.warn("Wrong issuer: " + claims.iss);
+        return false;
+    }
+    if (claims.nonce !== savedNonce) {
+        console.warn("Wrong nonce: " + claims.nonce);
+        return false;
+    }
+    if (accessToken &amp;&amp; !this.checkAtHash(accessToken, claims)) {
+        console.warn("Wrong at_hash");
+        return false;
+    }
+    var now = Date.now();
+    var issuedAtMSec = claims.iat * 1000;
+    var expiresAtMSec = claims.exp * 1000;
+    var tenMinutesInMsec = 1000 * 60 * 10;
+    if (issuedAtMSec - tenMinutesInMsec &gt;= now || expiresAtMSec + tenMinutesInMsec &lt;= now) {
+        console.warn("Token has been expired");
+        console.warn({
+            now: now,
+            issuedAtMSec: issuedAtMSec,
+            expiresAtMSec: expiresAtMSec
+        });
+        return false;
+    }
+    this._storage.setItem("id_token", idToken);
+    this._storage.setItem("id_token_claims_obj", claimsJson);
+    this._storage.setItem("id_token_expires_at", "" + expiresAtMSec);
+    if (this.validationHandler) {
+        this.validationHandler(idToken);
+    }
+    return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+if (!oauthSuccess)
+    return false;
+if (!this.oidc &amp;&amp; options.onTokenReceived) {
+    options.onTokenReceived({ accessToken: accessToken });
+}
+if (this.oidc) {
+    oidcSuccess = this.<span class="apidocCodeKeywordSpan">processIdToken</span>(idToken, accessToken);
+    if (!oidcSuccess)
+        return false;
+}
+if (options.validationHandler) {
+    var validationParams = { accessToken: accessToken, idToken: idToken };
+    options
+        .validationHandler(validationParams)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.setStorage" id="apidoc.element.angular2-oauth2.OAuthService.prototype.setStorage">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>setStorage
+        <span class="apidocSignatureSpan">(storage)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setStorage = function (storage) {
+    this._storage = storage;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// set to true, to receive also an id_token via OpenId Connect (OIDC) in addition to the
+// OAuth2-based access_token
+this.oauthService.oidc = true;
+
+// Use setStorage to use sessionStorage or another implementation of the TS-type Storage
+// instead of localStorage
+this.oauthService.<span class="apidocCodeKeywordSpan">setStorage</span>(sessionStorage);
+
+// To also enable single-sign-out set the url for your auth-server's logout-endpoint here
+this.oauthService.logoutUrl = "https://steyer-identity-server.azurewebsites.net/identity/connect/endsession?id_token={{id_token
+}}";
+
+// This method just tries to parse the token within the url when
+// the auth-server redirects the user back to the web-app
+// It dosn't initiate the login
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.tryLogin" id="apidoc.element.angular2-oauth2.OAuthService.prototype.tryLogin">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>tryLogin
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tryLogin = function (options) {
+    var _this = this;
+    options = options || {};
+    var parts = this.getFragment();
+    var accessToken = parts["access_token"];
+    var idToken = parts["id_token"];
+    var state = parts["state"];
+    var oidcSuccess = false;
+    var oauthSuccess = false;
+    if (!accessToken || !state)
+        return false;
+    if (this.oidc &amp;&amp; !idToken)
+        return false;
+    var savedNonce = this._storage.getItem("nonce");
+    var stateParts = state.split(';');
+    var nonceInState = stateParts[0];
+    if (savedNonce === nonceInState) {
+        this._storage.setItem("access_token", accessToken);
+        var expiresIn = parts["expires_in"];
+        if (expiresIn) {
+            var expiresInMilliSeconds = parseInt(expiresIn) * 1000;
+            var now = new Date();
+            var expiresAt = now.getTime() + expiresInMilliSeconds;
+            this._storage.setItem("expires_at", "" + expiresAt);
+        }
+        if (stateParts.length &gt; 1) {
+            this.state = stateParts[1];
+        }
+        oauthSuccess = true;
+    }
+    if (!oauthSuccess)
+        return false;
+    if (!this.oidc &amp;&amp; options.onTokenReceived) {
+        options.onTokenReceived({ accessToken: accessToken });
+    }
+    if (this.oidc) {
+        oidcSuccess = this.processIdToken(idToken, accessToken);
+        if (!oidcSuccess)
+            return false;
+    }
+    if (options.validationHandler) {
+        var validationParams = { accessToken: accessToken, idToken: idToken };
+        options
+            .validationHandler(validationParams)
+            .then(function () {
+            _this.callEventIfExists(options);
+        })
+            .catch(function (reason) {
+            console.error('Error validating tokens');
+            console.error(reason);
+        });
+    }
+    else {
+        this.callEventIfExists(options);
+    }
+    return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+        // To also enable single-sign-out set the url for your auth-server's logout-endpoint here
+        this.oauthService.logoutUrl = "https://steyer-identity-server.azurewebsites.net/identity/connect/endsession?id_token
+={{id_token}}";
+
+        // This method just tries to parse the token within the url when
+        // the auth-server redirects the user back to the web-app
+        // It dosn't initiate the login
+        this.oauthService.<span class="apidocCodeKeywordSpan">tryLogin</span>({});
+
+    }
+
+}
+
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.tryLoginWithIFrame" id="apidoc.element.angular2-oauth2.OAuthService.prototype.tryLoginWithIFrame">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>tryLoginWithIFrame
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tryLoginWithIFrame = function () {
+    throw new Error("tryLoginWithIFrame has not been implemented so far");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.angular2-oauth2.OAuthService.prototype.tryRefresh" id="apidoc.element.angular2-oauth2.OAuthService.prototype.tryRefresh">
+        function <span class="apidocSignatureSpan">angular2-oauth2.OAuthService.prototype.</span>tryRefresh
+        <span class="apidocSignatureSpan">(timeoutInMsec)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tryRefresh = function (timeoutInMsec) {
+    throw new Error("tryRefresh has not been implemented so far");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
